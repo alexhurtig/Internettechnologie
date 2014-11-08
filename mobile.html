@@ -1,0 +1,54 @@
+<xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3org/TR/html1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+        <title>worth-it</title>
+        <meta name="author" content="Alexander Hurtig"/>
+        <meta name="description" content="Bewerte Alles f&uuml;r alle!"/>
+        <meta name="date" content="2014-10-25"/>
+        <meta name="robots" content="nofollow,noindex"/>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<a href="home.html" target="_self">Startseite</a> 
+<form action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
+<fieldset>
+<legend>Ihre Daten</legend>
+Vorname:</br>
+<input type="text" name="vorname" id="fldvorname" size="30" maxlength="60" placeholder="Vorname" /></br>
+Nachname:</br>
+<input type="text" name="nachname" id="fldnachname" size="30" maxlength="60" placeholder="Nachname" /></br>
+E-Mail:</br>
+<input type="text" name="email" id="fldemail" size="30" maxlength="60" placeholder="E-Mail" /></br>
+</fieldset>
+<fieldset>
+<legend>Ihre Produktbewertung</legend>
+Beschreibung:</br>
+<textarea placeholder="Beschreibung" name="beschreibung" id="txtbeschreibung" cols="30" rows="5" maxrows="100"></textarea></br>
+Welche Note w&uuml;rden sie geben:</br>
+<select name="note" size="1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+</select><br/>
+
+W&auml;hlen sie die Kategorie:<br/>
+<input type="radio" name="kategorie" value="Handy" checked="checked"/>Handy<br/>
+<input type="radio" name="kategorie" value="TV"/>TV<br/>
+<input type="radio" name="kategorie" value="B&uuml;cher"/>B&uuml;cher<br/>
+Wie haben sie sich &uuml;ber das Produkt informiert:<br/>
+<input type="checkbox" name="online">Online<br/>
+<input type="checkbox" name="offline">Offline<br/>
+</fieldset>
+<input type="submit" value="Bewerten"/><br/>
+<input type="reset" value="Eingaben zur&uuml;cksetzen"/><br/>
+</form>
+</body>
