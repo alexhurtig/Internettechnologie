@@ -11,9 +11,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<a href="home.html" target="_self">Startseite</a>
-<h1>B&uuml;cher</h1>
-<h2>Hier kannst du deine Bewertung f&uuml;r ein Buch deiner Wahl abgeben</h2>
+<header>
+    <h1 class="header">B&uuml;cher</h1>
+    <h2 class="header">Hier kannst du deine Bewertung f&uuml;r ein Buch deiner Wahl abgeben</h2>
+</header>
+
+<a class="breadcrumb" href="home.html" target="_self">Startseite</a>
+
 <span>
     <form action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
         <fieldset>
@@ -43,9 +47,7 @@
         <input type="radio" name="kategorie" value="Offline"/>Offline<br/>
         <input type="radio" name="kategorie" value="Beides"/>Beides<br/>
         <input type="radio" name="kategorie" value="Spontankauf"/>Spontankauf<br/>
-        Wie haben sie sich &uuml;ber das Produkt informiert:<br/>
-        <input type="checkbox" name="online">Online<br/>
-        <input type="checkbox" name="offline">Offline<br/>
+        <input type="checkbox" name="AGB">Akzeptieren sie die AGB?<br/>
     </fieldset>
     <input type="submit" value="Bewerten"/><br/>
     <input type="reset" value="Eingaben zur&uuml;cksetzen"/><br/>

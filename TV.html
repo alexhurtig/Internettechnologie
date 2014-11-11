@@ -1,6 +1,6 @@
 <xml version="1.0" encoding="ISO-8859-1">
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3org/TR/html1/DTD/xhtml1-strict.dtd">
+"http://www.w3org/TR/html1/DTD/xhtml1-strict.dtd"></xml>
 <html>
 <head>
         <title>worth-it</title>
@@ -11,7 +11,12 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<a href="home.html" target="_self">Startseite</a>
+<header>
+    <h1 class="header">TV</h1>
+    <h2 class="header">Hier kannst du deine Bewertung f&uuml;r ein TV-Gerät deiner Wahl abgeben</h2>
+</header>
+
+<a class="breadcrumb" href="home.html" target="_self">Startseite</a>
 <form action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
 <fieldset>
 <legend>Ihre Daten</legend>
@@ -27,29 +32,23 @@ E-Mail:</br>
 Beschreibung:</br>
 <textarea placeholder="Beschreibung" name="beschreibung" id="txtbeschreibung" cols="30" rows="5" maxrows="100"></textarea></br>
 Welche Note w&uuml;rden sie geben:</br>
-<select name="note" size="1">
+    <select name="note" size="1">
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
         <option>5</option>
         <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-</select><br/>
-
-W&auml;hlen sie die Kategorie:<br/>
-<input type="radio" name="kategorie" value="Handy" checked="checked"/>Handy<br/>
-<input type="radio" name="kategorie" value="TV"/>TV<br/>
-<input type="radio" name="kategorie" value="B&uuml;cher"/>B&uuml;cher<br/>
-Wie haben sie sich &uuml;ber das Produkt informiert:<br/>
-<input type="checkbox" name="online">Online<br/>
-<input type="checkbox" name="offline">Offline<br/>
+    </select><br/>
+    Wie haben sie sich vor dem Kauf informiert:<br/>
+    <input type="radio" name="kategorie" value="Online" checked="checked"/>Online<br/>
+    <input type="radio" name="kategorie" value="Offline"/>Offline<br/>
+    <input type="radio" name="kategorie" value="Beides"/>Beides<br/>
+    <input type="radio" name="kategorie" value="Spontankauf"/>Spontankauf<br/>
 </fieldset>
-<input type="submit" value="Bewerten"/><br/>
-<input type="reset" value="Eingaben zur&uuml;cksetzen"/><br/>
+    <input type="checkbox" name="AGB">Akzeptieren sie die AGB?<br/>
+    <input type="submit" value="Bewerten"/><br/>
+    <input type="reset" value="Eingaben zur&uuml;cksetzen"/><br/>
 </form>
 </body>
 </html>

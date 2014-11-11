@@ -1,4 +1,9 @@
-﻿* {font-family:arial;}
-body {background-color:white;}
-h1 {color:blue;}
-form {background-color: orange;}
+﻿*       {font-family:arial;margin:0;}
+div     {padding:0;background-color:#00BFFF;}
+header  {padding:30;background-color:#00BFFF;height:110px;}
+.header {padding:10px;color:#FFFFFF;}//#3B170B;text-align="center";}
+body    {padding:35px;background-color:#029903;}
+h1      {color:black;}
+table   {padding:20px;margin-top:30px;}
+td      {padding:10;border:5px;}
+form    {background-color: orange;}
