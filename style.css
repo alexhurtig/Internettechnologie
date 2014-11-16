@@ -1,10 +1,11 @@
 ﻿*       {font-family:arial;margin:0;}
-div     {padding:0;background-color:#00BFFF;}
-header  {padding:30;background-color:#00BFFF;height:110px;}
-.header {padding:10px; color:#FFFFFF;}
-body    {padding:35px; background-color:#029903;}
+div     {padding:0;}
+header  {padding:30px; background-color:#00BFFF; height:110px;}
+.header {padding:10px; color:#FFFFFF; text-align:center;}
+body    {padding:0px; background-color:#029903;}
 h1      {color:black;}
 table   {padding:20px; margin-top:30px;}
-td      {padding:10; border:5px;}
+td      {padding:10px; border:5px;}
 form    {background-color:orange; margin:10px;}
 .button {padding:10px; margin:10px;}
+.checkbox {margin:10px;}
