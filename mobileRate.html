@@ -3,14 +3,14 @@
 "http://www.w3org/TR/html1/DTD/xhtml1-strict.dtd"></xml>
 <html>
 <head>
-        <title>worth-it</title>
-        <meta name="author" content="Alexander Hurtig"/>
-        <meta name="description" content="Bewerte Alles f&uuml;r alle!"/>
-        <meta name="date" content="2014-10-25"/>
-        <meta name="robots" content="nofollow,noindex"/>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>worth-it</title>
+    <meta name="author" content="Alexander Hurtig"/>
+    <meta name="description" content="Bewerte Alles f&uuml;r alle!"/>
+    <meta name="date" content="2014-10-25"/>
+    <meta name="robots" content="nofollow,noindex"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="js/worthit.js" type="text/javascript"></script>
 </head>
-
 
 <a href="top"></a>
 
@@ -26,7 +26,7 @@
 </div>
 
 <div>
-    <form action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
+    <form action="" method="post" enctype="text/plain">
         <fieldset>
             <legend>Ihre Daten</legend>
             Vorname:<br/>
@@ -42,6 +42,7 @@
             <textarea placeholder="Beschreibung" name="beschreibung" id="txtbeschreibung" cols="60" rows="5"></textarea><br/>
             Welche Schulnote w&uuml;rden sie geben:<br/>
             <select name="note" size="1">
+                <option>bitte Ausw&auml;hlen!</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -56,8 +57,8 @@
             <input type="radio" name="kategorie" value="Spontankauf"/> Spontankauf<br/>
         </fieldset>
         <input class="checkbox" type="checkbox" name="AGB"> Akzeptieren sie die AGB.<br/>
-        <input class="button" type="submit" value="Bewerten"/>
-        <input class="button" type="reset" value="Eingaben zur&uuml;cksetzen"/><br/>
+        <input onclick="checkForm()" class="button" type="submit" value="Bewerten" onclick="check()"/>
+        <input onclick="clean()" class="button" type="reset" value="Eingaben zur&uuml;cksetzen" /><br/>
     </form>
 </div>
 
