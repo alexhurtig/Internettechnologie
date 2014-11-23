@@ -26,7 +26,7 @@
 </div>
 
 <div>
-    <form action="" method="post" enctype="text/plain">
+    <form onsubmit="checkForm();" action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
         <fieldset>
             <legend>Ihre Daten</legend>
             Vorname:<br/>
@@ -57,8 +57,8 @@
             <input type="radio" name="kategorie" value="Spontankauf"/> Spontankauf<br/>
         </fieldset>
         <input class="checkbox" type="checkbox" name="AGB"> Akzeptieren sie die AGB.<br/>
-        <input onclick="checkForm()" class="button" type="submit" value="Bewerten" onclick="check()"/>
-        <input onclick="clean()" class="button" type="reset" value="Eingaben zur&uuml;cksetzen" /><br/>
+        <input class="button" type="submit" value="Bewerten" onclick="check()"/>
+        <input onclick="clean();" class="button" type="reset" value="Eingaben zur&uuml;cksetzen" /><br/>
     </form>
 </div>
 

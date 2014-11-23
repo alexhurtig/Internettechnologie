@@ -1,7 +1,7 @@
 function checkForm(){
-var form = document.forms[0];
-var error = "";
-if (form.vorname.value==""){
+var form = document.form[0];
+var error = "asdf";
+/*if (form.vorname.value==""){
     error = error + "Vorname fehlt! ";
 }
 if (form.nachname.value==""){
@@ -13,24 +13,30 @@ if (form.email.value==""){
 if (form.beschreibung.length < 50){
     error = error + "Beschreibung zu kurz! ";
 }
-if (form.note.value=="bitte Auswählen!"){
+if (form.note.indexOf== "bitte"){
     error = error + "Note fehlt! ";
 }
-if (form.AGB.value!=checked){
+if (!form.AGB.value=checked){
     error = error + "AGB nicht bestätigt! ";
-}
+}*/
 if (error != ""){
-    var errorMessage= "Alter du hast wat verjessen: ";
+    var errorMessage= "Versuche es noch einmal, du hast folgendes vergessen: \n";
     errorMessage = errorMessage + error;
     window.alert(errorMessage);
     return false;
 }
+return true;
 }
 
 function clean(){
-    window.alert("Wirklich alles loeschen?");
+    var conf=window.confirm('Wirklich alles loeschen?');
+    //if (conf){
+    //    return (set type"reset");
+    //} else {
+    //    return conf;
+    //}
 }
 
 function welcome(){
-    window.alert("Willkommen!");
+    window.alert('Willkommen!');
 }
