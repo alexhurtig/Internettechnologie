@@ -1,32 +1,30 @@
 function checkForm(){
-/*var form = document.form[0];
+var form = document.forms[0];
 var error = "";
 if (form.vorname.value == ""){
-    error = error + "Vorname fehlt! ";
+    error += "Vorname fehlt! \n";
 }
 if (form.nachname.value==""){
-    error = error + "Nachnamefelt! ";
+    error += "Nachname fehlt! \n";
 }
 if (form.email.value==""){
-    error = error + "E-Mail! ";
+    error += "E-Mail! \n";
 }
-if (form.beschreibung.length < 50){
-    error = error + "Beschreibung zu kurz! ";
+if (form.beschreibung.value.length < 50){
+    error += "Beschreibung zu kurz! \n";
 }
-if (form.note.indexOf== "bitte"){
-    error = error + "Note fehlt! ";
-}
-if (!form.AGB.value=checked){
-    error = error + "AGB nicht bestätigt! ";
+if (!form.AGB.checked){
+    error += "AGB nicht bestaetigt! \n";
 }
 if (error != ""){
     var errorMessage= "Versuche es noch einmal, du hast folgendes vergessen: \n";
-    errorMessage = errorMessage + error;*/
+    errorMessage = errorMessage + error;
     window.alert(errorMessage);
-/*    return false;
+    return false;
 } else {
     return true;
-}*/
+}
+return false;
 }
 
 function clean(){
