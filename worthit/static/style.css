@@ -1,0 +1,14 @@
+﻿*           {font-family:arial;margin:0;}
+div         {padding:20;font-size:120%;display:block;}
+header      {padding:30px; background-color:#00BFFF; height:60px;position:fixed;top:0px;left:0px;right:0px;}
+body        {padding:0px; position:relative;top:110px;background-color:#029903;}
+h1          {color:black;}
+table       {padding:20px; margin-top:30px;text-align:center;}
+img         {max-height:400px; max-width:600px; float:left;margin-top:20px;margin-right:20px;}
+td          {padding:10px; border:5px;}
+form        {background-color:orange; max-width:500px; min-width:400px;}
+fieldset    {frame:10px;frame-color:black;}
+.button     {padding:10px; margin:10px;}
+.checkbox   {margin:10px;}
+.header     {padding:10px; color:#FFFFFF; text-align:center; min-width:600px; font-size:150%;}
+.anchor     {clear:left;}

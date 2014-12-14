@@ -37,9 +37,9 @@ function welcome(){
 }
 
 function mousOver(){
-    document.getElementById("bild").src = "android.jpg";
+    document.getElementById("bild").src = "pagefiles/android.jpg";
 }
 
 function mousWeg(){
-    document.getElementById("bild").src = "beispiel.jpg";
+    document.getElementById("bild").src = "{% static "beispiel.jpg"%}";
 }

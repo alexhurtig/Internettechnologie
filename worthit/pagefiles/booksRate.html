@@ -1,36 +1,37 @@
-<xml version="1.0" encoding="ISO-8859-1">
+<xml version="1.0" encoding="ISO-8859-1" >
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3org/TR/html1/DTD/xhtml1-strict.dtd"></xml>
 <html>
 <head>
-        <title>worth-it</title>
-        <meta name="author" content="Alexander Hurtig"/>
-        <meta name="description" content="Bewerte Alles f&uuml;r alle!"/>
-        <meta name="date" content="2014-10-25"/>
-        <meta name="robots" content="nofollow,noindex"/>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>worth-it</title>
+    <meta name="author" content="Alexander Hurtig"/>
+    <meta name="description" content="Bewerte Alles f&uuml;r alle!"/>
+    <meta name="date" content="2014-10-25"/>
+    <meta name="robots" content="nofollow,noindex"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="js/worthit.js" type="text/javascript"></script>
 </head>
 
 <a href="top"></a>
 
 <header>
-    <h1 class="header">TV | Hier kannst du bewerten.</h1>
+    <h1 class="header">B&uuml;cher | Hier kannst du bewerten.</h1>
 </header>
+
 <body>
 <div>
     <a class="breadtext">Du bist hier: </a>
-    <a class="breadcrumb" href="home.html" target="_self">Startseite</a>
+    <a class="breadcrumb" href="/">Startseite</a>
     <a class="breadtext"> > </a>
-    <a class="breadcrumb" href="TVrate.html" target="_self">TV - Bewerten</a>
+    <a class="breadcrumb" href="/booksRate/">B&uuml;cher - Bewerten</a>
 </div>
 
 <div>
     <form action="mailto:alexander.hurtig.84@gmail.com" method="post" enctype="text/plain">
         <fieldset>
             <legend>Ihre Daten</legend>
-            Vorname:<br/>
-            <input type="text" name="vorname" id="fldvorname" size="30" maxlength="60" placeholder="Vorname" /><br/>
+            Vorname:<br>
+            <input type="text" name="vorname" id="fldvorname" size="30" maxlength="60" placeholder="Vorname" /><br>
             Nachname:<br/>
             <input type="text" name="nachname" id="fldnachname" size="30" maxlength="60" placeholder="Nachname" /><br/>
             E-Mail:<br/>
@@ -55,7 +56,7 @@
             <input type="radio" name="kategorie" value="Beides"/> Beides<br/>
             <input type="radio" name="kategorie" value="Spontankauf"/> Spontankauf<br/>
         </fieldset>
-        <input class="checkbox" type="checkbox" name="AGB">Akzeptieren sie die AGB.<br/>
+        <input class="checkbox" type="checkbox" name="AGB">Hiermit akzeptieren sie die AGB.<br/>
         <input class="button" type="submit" value="Bewerten" onclick="return checkForm();"/>
         <input class="button" type="reset" value="Eingaben zur&uuml;cksetzen" onclick="return clean();"/><br/>
     </form>
