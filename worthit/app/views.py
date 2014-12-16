@@ -28,7 +28,6 @@ def booksView(request):
     return render_to_response('C:\Program Files\Code\Internettechnologie\worthit\pagefiles\\booksView.html')
 
 def add_form_data(request):
-    # Get the context from the request.
     context = RequestContext(request)
 
     if request.method == 'POST':
