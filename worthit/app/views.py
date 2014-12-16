@@ -1,7 +1,6 @@
-from collections.__main__ import p
-import webbrowser
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 
 def hello(request):
@@ -27,3 +26,14 @@ def TVview(request):
 
 def booksView(request):
     return render_to_response('C:\Program Files\Code\Internettechnologie\worthit\pagefiles\\booksView.html')
+
+def add_form_data(request):
+    # Get the context from the request.
+    context = RequestContext(request)
+
+    if request.method == 'POST':
+        context.save(commit=True)
+    #    form = CategoryForm(request.POST)
+  #      form.save(commit=True)
+  #  else:
+    return render_to_response('C:\Program Files\Code\Internettechnologie\worthit\pagefiles\home.html')

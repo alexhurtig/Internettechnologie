@@ -12,5 +12,6 @@ urlpatterns = patterns('',
     url(r'^booksRate', 'app.views.booksRate'),
     url(r'^mobileView', 'app.views.mobileView'),
     url(r'^TVview', 'app.views.TVview'),
-    url(r'^booksView', 'app.views.booksView')
+    url(r'^booksView', 'app.views.booksView'),
+    url(r'^add_form_data/$', 'app.views.add_form_data')
 )
