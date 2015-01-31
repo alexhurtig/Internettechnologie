@@ -30,10 +30,3 @@ def booksView(request):
 def add_form_data(request):
     success = 'Your name is: ' + request.GET['vorname'] + request.GET['nachname']+'Your Email: '+request.GET['email']+'Your Category: '+request.GET['kategorie']+'Your note: '+request.GET['note']+'Your message: '+request.GET['beschreibung']
     return HttpResponse(success)
-
-#def search(request):
- #   if 'q' in request.GET:
-  #      message = 'You searched for: %r' % request.GET['q']
-   # else:
-    #    message = 'You submitted an empty form.'
-    #return HttpResponse(message)
