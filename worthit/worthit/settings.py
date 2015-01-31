@@ -85,6 +85,7 @@ USE_TZ = True
 
 PROJECT_PATH = 'C:\Program Files\Code\Internettechnologie\worthit'
 
-TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, '../worthit/pagefiles/'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'pagefiles'),)
 
-STATIC_URL = (os.path.join(PROJECT_PATH, '../worthit/static/'))
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'pagefiles'),)
